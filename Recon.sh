@@ -48,7 +48,7 @@ echo -e "\e[35m#----------------------------------#"
 echo    "                                          "
 echo -e "\e[39m"
 
-python3 /home/ec2-user/AutoNmap/CSVComp\ -Final.py $2
+python3 <Path>/CSVComp\ -Final.py $2
 
 echo    "                                          "
 echo -e "\e[35m#----------------------------------#"

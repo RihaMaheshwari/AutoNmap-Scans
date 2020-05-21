@@ -12,7 +12,7 @@ $ mkdir Reports
 ```
 **Step 2:** Enter the IP Addresses you want to scan in IP-Address file.
 
-**Step 3:** Navigate to Recon.sh and change the <Path> to actual Path in Line no. 40,41 and 42.
+**Step 3:** Navigate to Recon.sh and change the <Path> to actual Path in Line no. 40,41,42 and 51.
 
 **Step 4:** Navigate to CSVComp-Final.py file and add the sender email-id in line 20 and receiver email-id in line 21 and password in Line 22. Also, change the <Path> to actual Path in Line 60,85 and 86.
 
@@ -21,6 +21,6 @@ $ mkdir Reports
 ```
 $ crontab -e
 # Add the following line-
-0 1 * * * <Path>/AutoNmap/Recon.sh <Path>/AutoNmap/IP-Address IP-Address >> <Path>/AutoNmap/Recon.log 2>&1 &
+0 1 * * * <Path>/Recon.sh <Path>/IP-Address IP-Address >> <Path>/Recon.log 2>&1 &
 ```
 **Note:** If you have large number of subnets to scan you can create multiple IP-Address files. Just Rename the files as IP-Address1, IP-Address2, etc., and replace the same in Cronjob.
